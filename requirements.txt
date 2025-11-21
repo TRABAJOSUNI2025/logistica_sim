@@ -1,0 +1,28 @@
+# Dependencias principales del Sistema de Logística Ferreyros
+# Sistema de Simulación Logística - v1.0.0
+# Compatible con Python 3.10+
+
+# GUI Framework
+PyQt6>=6.6.1
+PyQt6-Qt6>=6.6.1
+PyQt6-sip>=13.6.0
+
+# Data Analysis and Numerical Computing
+# Versiones recientes compatibles con Python 3.14
+pandas>=2.1.0
+numpy>=2.0.0
+
+# Visualization and Reporting
+matplotlib>=3.8.0
+openpyxl>=3.1.2
+
+# Optional: Image Processing (para generar iconos)
+# Descomenta la siguiente línea si vas a usar script_generar_iconos.py
+# Pillow==10.0.0
+
+# Optional: Jupyter (para análisis interactivo)
+# Descomenta las siguientes líneas para usar simulador.ipynb
+# jupyter==1.0.0
+# notebook==7.0.0
+# ipython==8.15.0
+

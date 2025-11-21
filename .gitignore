@@ -1,0 +1,77 @@
+# Entorno Virtual
+venv/
+env/
+ENV/
+.venv
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE y Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Archivos generados por la simulación
+reporte_simulacion.txt
+datos_simulacion.csv
+*.xlsx
+*.xls
+
+# Logs
+*.log
+logs/
+
+# Carpeta de recursos (si tiene archivos grandes)
+gui/recursos/iconos/
+gui/recursos/logos/
+
+# Archivos temporales
+*.tmp
+*.bak
+.temp/
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Archivos de configuración local
+config_local.py
+
+# Carpeta de outputs
+outputs/
+reportes_generados/
+
+# Otros
+.pytest_cache/
+.coverage
+htmlcov/

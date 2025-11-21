@@ -1,0 +1,403 @@
+/* 
+    estilos.qss - Estilos para Sistema de Simulación Logística
+    Ferreyros / Andes Logistics S.A.
+    
+    Colores corporativos:
+    - Amarillo: #FFD700
+    - Naranja: #FFA500
+    - Negro: #333333
+    - Gris: #666666
+*/
+
+/* ============================================================================
+   VENTANA PRINCIPAL
+   ============================================================================ */
+
+QMainWindow {
+    background-color: white;
+}
+
+QWidget {
+    background-color: white;
+    color: #333333;
+}
+
+/* ============================================================================
+   BOTONES
+   ============================================================================ */
+
+QPushButton {
+    background-color: #FFD700;
+    color: #000000;
+    border: 2px solid #FFA500;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #FFC700;
+    border: 2px solid #FF8C00;
+}
+
+QPushButton:pressed {
+    background-color: #FFB700;
+    border: 2px solid #FF7500;
+}
+
+QPushButton:disabled {
+    background-color: #CCCCCC;
+    color: #999999;
+    border: 2px solid #AAAAAA;
+}
+
+/* Botones secundarios (Volver) */
+QPushButton#btnVolver {
+    background-color: #E8E8E8;
+    color: #333333;
+    border: 2px solid #CCCCCC;
+}
+
+QPushButton#btnVolver:hover {
+    background-color: #D8D8D8;
+    border: 2px solid #BBBBBB;
+}
+
+/* ============================================================================
+   LABELS
+   ============================================================================ */
+
+QLabel {
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+
+QLabel#lblTitulo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+QLabel#lblSubtitulo {
+    font-size: 14px;
+    color: #666666;
+    font-style: italic;
+}
+
+QLabel#lblResumen {
+    font-size: 10px;
+    color: #999999;
+}
+
+/* ============================================================================
+   TABLAS
+   ============================================================================ */
+
+QTableWidget {
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    gridline-color: #EEEEEE;
+    font-size: 11px;
+}
+
+QTableWidget::item {
+    padding: 5px;
+    border: 1px solid #EEEEEE;
+}
+
+QTableWidget::item:selected {
+    background-color: #FFE680;
+}
+
+QHeaderView::section {
+    background-color: #FFD700;
+    color: #000000;
+    padding: 5px;
+    border: 1px solid #FFA500;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+QTableView {
+    background-color: white;
+    border: 1px solid #CCCCCC;
+}
+
+/* ============================================================================
+   TABS
+   ============================================================================ */
+
+QTabWidget {
+    background-color: white;
+}
+
+QTabBar::tab {
+    background-color: #E8E8E8;
+    color: #333333;
+    padding: 8px 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 0 0;
+    font-weight: bold;
+}
+
+QTabBar::tab:selected {
+    background-color: #FFD700;
+    color: #000000;
+    border: 2px solid #FFA500;
+}
+
+QTabBar::tab:hover {
+    background-color: #FFE680;
+}
+
+/* ============================================================================
+   INPUTS Y CAMPOS
+   ============================================================================ */
+
+QLineEdit {
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+    color: #333333;
+    selection-background-color: #FFD700;
+}
+
+QLineEdit:focus {
+    border: 2px solid #FFD700;
+    background-color: #FFFACD;
+}
+
+QSpinBox {
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+    color: #333333;
+}
+
+QSpinBox:focus {
+    border: 2px solid #FFD700;
+    background-color: #FFFACD;
+}
+
+QCheckBox {
+    color: #333333;
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #FFD700;
+    border: 1px solid #FFA500;
+}
+
+/* ============================================================================
+   TEXT EDIT
+   ============================================================================ */
+
+QTextEdit {
+    background-color: white;
+    color: #333333;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 5px;
+    font-family: "Courier New", monospace;
+    font-size: 10px;
+}
+
+QTextEdit:focus {
+    border: 2px solid #FFD700;
+}
+
+/* ============================================================================
+   SCROLL BARS
+   ============================================================================ */
+
+QScrollBar:vertical {
+    background-color: #F5F5F5;
+    width: 12px;
+    border: 1px solid #CCCCCC;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #FFD700;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #FFC700;
+}
+
+QScrollBar:horizontal {
+    background-color: #F5F5F5;
+    height: 12px;
+    border: 1px solid #CCCCCC;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #FFD700;
+    border-radius: 6px;
+    min-width: 20px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #FFC700;
+}
+
+/* ============================================================================
+   FRAMES Y SEPARADORES
+   ============================================================================ */
+
+QFrame {
+    background-color: white;
+    border: 1px solid #EEEEEE;
+}
+
+QFrame#frameHeader {
+    background-color: #FFFACD;
+    border-bottom: 2px solid #FFD700;
+}
+
+QFrame#frameFooter {
+    background-color: #F5F5F5;
+    border-top: 1px solid #CCCCCC;
+}
+
+/* ============================================================================
+   DIALOGS
+   ============================================================================ */
+
+QDialog {
+    background-color: white;
+}
+
+QMessageBox QLabel {
+    color: #333333;
+}
+
+/* ============================================================================
+   TARJETAS (Cards para indicadores)
+   ============================================================================ */
+
+QFrame#cardExito {
+    background-color: #D4EDDA;
+    border: 2px solid #28A745;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+QFrame#cardAlerta {
+    background-color: #FFF3CD;
+    border: 2px solid #FFC107;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+QFrame#cardError {
+    background-color: #F8D7DA;
+    border: 2px solid #DC3545;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+QFrame#cardInfo {
+    background-color: #D1ECF1;
+    border: 2px solid #17A2B8;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* ============================================================================
+   COMBO BOX
+   ============================================================================ */
+
+QComboBox {
+    background-color: white;
+    color: #333333;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+QComboBox:hover {
+    border: 1px solid #FFD700;
+}
+
+QComboBox::drop-down {
+    border: none;
+}
+
+QComboBox::down-arrow {
+    image: none;
+    width: 12px;
+    height: 12px;
+    background-color: #FFD700;
+}
+
+/* ============================================================================
+   MENU
+   ============================================================================ */
+
+QMenu {
+    background-color: white;
+    color: #333333;
+    border: 1px solid #CCCCCC;
+}
+
+QMenu::item:selected {
+    background-color: #FFD700;
+}
+
+QMenuBar {
+    background-color: white;
+    color: #333333;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+QMenuBar::item:selected {
+    background-color: #FFD700;
+}
+
+/* ============================================================================
+   PROGRESS BAR
+   ============================================================================ */
+
+QProgressBar {
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    background-color: #F5F5F5;
+    text-align: center;
+    height: 25px;
+}
+
+QProgressBar::chunk {
+    background-color: #FFD700;
+    border-radius: 3px;
+}
+
+/* ============================================================================
+   TOOLTIPS
+   ============================================================================ */
+
+QToolTip {
+    background-color: #FFD700;
+    color: #000000;
+    border: 1px solid #FFA500;
+    border-radius: 4px;
+    padding: 3px;
+}
